@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundgray"
+        tools:context=".ViewchildDetails"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/bloodgroup_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="monospace"
+            android:text="Blood Group - A+"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/height_text"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/height_text"
+            app:layout_constraintTop_toBottomOf="@+id/height_text" />
+
+        <TextView
+            android:id="@+id/height_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="monospace"
+            android:text="Hieght cm - 125"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/weight_text"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/weight_text"
+            app:layout_constraintTop_toBottomOf="@+id/weight_text" />
+
+        <TextView
+            android:id="@+id/weight_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="monospace"
+            android:text="Weight Kg - 18"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/dob_text"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="@+id/dob_text"
+            app:layout_constraintTop_toBottomOf="@+id/dob_text" />
+
+        <TextView
+            android:id="@+id/dob_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="monospace"
+            android:text="Date Of Birth - 06-02-2018"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/age_text"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/age_text"
+            app:layout_constraintTop_toBottomOf="@+id/age_text" />
+
+        <TextView
+            android:id="@+id/age_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="monospace"
+            android:text="Age - 5"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/childname_text"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/childname_text"
+            app:layout_constraintTop_toBottomOf="@+id/childname_text" />
+
+        <TextView
+            android:id="@+id/menubar_viewchilddetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_menu_24"
+            android:drawableRight="@drawable/ic_baseline_account_circle_24"
+            android:drawablePadding="138dp"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="#057262"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05" />
+
+        ///Topic View Child Details
+        <TextView
+            android:id="@+id/viewchilddetails_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:text="View Child Details"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textColor="#3F51B5"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SearchView
+            android:id="@+id/searchView_viewchild"
+            android:layout_width="306dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:background="#DDD2D2"
+            android:queryHint="Search here"
+            app:layout_constraintEnd_toEndOf="@+id/viewchilddetails_text"
+            app:layout_constraintStart_toStartOf="@+id/viewchilddetails_text"
+            app:layout_constraintTop_toBottomOf="@+id/viewchilddetails_text" />
+
+        <TextView
+            android:id="@+id/childname_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="monospace"
+            android:text="Child Name - Nuwandi Dahanayake"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/searchView_viewchild"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="@+id/searchView_viewchild"
+            app:layout_constraintTop_toBottomOf="@+id/searchView_viewchild" /><![CDATA[
+
+        app:layout_constraintEnd_toEndOf="@+id/viewchilddetails_text"
+        app:layout_constraintStart_toStartOf="@+id/viewchilddetails_text"
+        app:layout_constraintTop_toBottomOf="@+id/viewchilddetails_text" />
+
+    ]]>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

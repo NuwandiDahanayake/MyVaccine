@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgray"
+    tools:context=".AppointmentLadyridgeway"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/ladyappointmentmenubar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_menu_24"
+        android:drawableRight="@drawable/ic_baseline_account_circle_24"
+        android:drawablePadding="138dp"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textColor="#057262"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
+
+    ///Topic
+    <TextView
+        android:id="@+id/ladybookappointment_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="monospace"
+        android:text="Book Appointment"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ladyappointmentmenubar"
+        app:layout_constraintStart_toStartOf="@+id/ladyappointmentmenubar"
+        app:layout_constraintTop_toBottomOf="@+id/ladyappointmentmenubar" />
+
+    <ImageView
+        android:id="@+id/ladyappointment_image"
+        android:layout_width="299dp"
+        android:layout_height="185dp"
+        app:layout_constraintEnd_toEndOf="@+id/ladybookappointment_txt"
+        app:layout_constraintStart_toStartOf="@+id/ladybookappointment_txt"
+        app:layout_constraintTop_toBottomOf="@+id/ladybookappointment_txt"
+        app:srcCompat="@drawable/bookhospitalimage" />
+
+    <EditText
+        android:id="@+id/ladydateofappointment_txt"
+        android:layout_width="305dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Date of Appointment  (mm-dd-yyyy)"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/ladyappointment_image"
+        app:layout_constraintStart_toStartOf="@+id/ladyappointment_image"
+        app:layout_constraintTop_toBottomOf="@+id/ladyappointment_image" />
+
+    <EditText
+        android:id="@+id/ladytime_txt"
+        android:layout_width="305dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Time  (mm-dd-yyyy)"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="@+id/ladydateofappointment_txt"
+        app:layout_constraintStart_toStartOf="@+id/ladydateofappointment_txt"
+        app:layout_constraintTop_toBottomOf="@+id/ladydateofappointment_txt" />
+
+    <EditText
+        android:id="@+id/ladychildname_txt"
+        android:layout_width="305dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Child Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/ladytime_txt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ladytime_txt"
+        app:layout_constraintTop_toBottomOf="@+id/ladytime_txt" />
+
+    <EditText
+        android:id="@+id/ladyage_txt"
+        android:layout_width="305dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/ladychildname_txt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ladychildname_txt"
+        app:layout_constraintTop_toBottomOf="@+id/ladychildname_txt" />
+
+    <EditText
+        android:id="@+id/ladydoctorname_txt"
+        android:layout_width="305dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Doctor Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/ladyage_txt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ladyage_txt"
+        app:layout_constraintTop_toBottomOf="@+id/ladyage_txt" />
+
+    <ImageButton
+        android:id="@+id/ladylocation_image"
+        android:layout_width="32dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ladydoctorname_txt"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="@+id/ladydoctorname_txt"
+        app:layout_constraintTop_toBottomOf="@+id/ladydoctorname_txt"
+        app:layout_constraintVertical_bias="0.104"
+        app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+    ///Location button
+    <Button
+        android:id="@+id/ladylocation_btn"
+        android:layout_width="103dp"
+        android:layout_height="36dp"
+        android:text="Click here"
+        android:textColor="#9C27B0"
+        android:textColorLink="#2196F3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ladydoctorname_txt"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="@+id/ladydoctorname_txt"
+        app:layout_constraintTop_toBottomOf="@+id/ladydoctorname_txt"
+        app:layout_constraintVertical_bias="0.061" />
+
+    ///Submit button
+    <Button
+        android:id="@+id/ladyappointment_btn"
+        android:layout_width="134dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="72dp"
+        android:background="@color/black"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorLink="#2196F3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ladydoctorname_txt"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/ladylocation_image"
+        app:layout_constraintTop_toBottomOf="@+id/ladydoctorname_txt"
+        app:layout_constraintVertical_bias="0.905" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

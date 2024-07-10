@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyVaccine"
+        tools:targetApi="31">
+        <activity
+            android:name=".Why_Vaccinationpage"
+            android:exported="false" />
+        <activity
+            android:name=".Appointment_GenaralHospital"
+            android:exported="false" />
+        <activity
+            android:name=".Appointment_centralHopital"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBH5zCjnDfVGYSQTwgWD4duQH3z-g5Jc7s" />
+
+        <activity
+            android:name=".Genaralhospital_Map"
+            android:exported="false"
+            android:label="@string/title_activity_genaralhospital_map" />
+        <activity
+            android:name=".Centralhospital_Map"
+            android:exported="false"
+            android:label="@string/title_activity_centralhospital_map" />
+        <activity
+            android:name=".Nationalkandy_Map"
+            android:exported="false"
+            android:label="@string/title_activity_nationalkandy_map" />
+        <activity
+            android:name=".AppointmentNational_kandy"
+            android:exported="false" />
+        <activity
+            android:name=".LadyridgewayMap"
+            android:exported="false"
+            android:label="@string/title_activity_ladyridgeway_map" />
+        <activity
+            android:name=".Appoinmtent"
+            android:exported="false" />
+        <activity
+            android:name=".SelectHospital"
+            android:exported="false" />
+        <activity
+            android:name=".ApprovalhospitalUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".AddapprovalHospital"
+            android:exported="false" />
+        <activity
+            android:name=".ViewchildDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AdminhospitalAdd"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteHospital"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AdminHomepage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UpdateHospital"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ViewApproval"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ContactUs"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".NationalcolomboMap"
+            android:exported="false"
+            android:label="@string/title_activity_nationalcolombo_map" />
+        <activity
+            android:name=".ChildInfo"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Homepage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AdminRegister"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AdminLogin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ParentRegister"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ParentLogin"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>
